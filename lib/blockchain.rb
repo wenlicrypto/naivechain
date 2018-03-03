@@ -1,4 +1,4 @@
-require_relative "block.rb"
+require_relative 'block'
 
 class Blockchain
   attr_accessor :chain
