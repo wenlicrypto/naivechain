@@ -31,4 +31,16 @@ class Blockchain
 
     @chain.push(generate_new_block(previous_block, data))
   end
+
+  def print
+    @chain.each do |block|
+      puts "******Block #{block.index}******"
+      puts "Previous Hash: #{block.previous_hash}"
+      puts "Current Hash: #{block.current_hash}"
+      puts "Timestamp: #{block.timestamp}"
+      puts "data: #{block.data}"
+      puts "********End********"
+      puts ""
+    end
+  end
 end
